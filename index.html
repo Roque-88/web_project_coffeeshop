@@ -15,16 +15,70 @@
     <title>vamos al grano</title>
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="favicon.ico" href="/favicon.ico.svg" />
+    <link rel="icon" href="favicon.ico" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:ital,wght@0,400;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body>
     <div class="page">
-      <header class="header"></header>
-      <main class="content"></main>
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logotipo"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a class="nav__link" href="#recetas">recetas</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#reservar">Reservar una mesa</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#contactos">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <div class="header__span-accent">Café de especialidad</div>
+          en Triple Peaks
+        </h1>
+        <p class="header__description">
+          ¡Te damos la bienvenida a nuestra zona de estudio! Aquí tenemos café
+          para darte energía y motivar tu creatividad.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Ilustración 'Dentro de la biblioteca'"
+          class="header__image"
+        />
+
+        <div class="header__footer">
+          <div class="header__timetable">
+            <p class="header__paragraph">Horario:</p>
+            <p class="header__paragraph">
+              Lunes a Viernes (de 10:00h a 19:00h)
+            </p>
+            <p class="header__paragraph">
+              Sábados y Domingos (de 11:00h a 18:00h)
+            </p>
+          </div>
+          <div class="header__address">
+            <p class="header__paragraph">
+              Avenida del Éxito 200, Ciudad Triple Peaks
+            </p>
+          </div>
+        </div>
+      </header>
+      <main class="content">
+        <section class="recipes"></section>
+        <section class="reservation"></section>
+      </main>
       <footer class="footer"></footer>
     </div>
   </body>
